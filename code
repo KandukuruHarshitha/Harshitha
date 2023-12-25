@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#define max_size 5
+char lock [100]="harshu@123";
+void email();
+void adhar();
+void pan();
+int main()
+{
+int choice;
+printf("\n-details-\n");
+printf("1.email\n"); 114 printf("2.adhar\n");
+printf("3.pan\n");
+printf(" ");
+while (1)
+{
+printf("choice:");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:email();
+break;
+case 2:adhar();
+break;
+case 3: pan();
+break;
+default:printf("invalid choice");
+break;
+}}
+return 0;
+}
+void email()
+{
+char a[100];
+int i;
+printf("enter a password\n");
+scanf("%s",a);
+i=strcmp(lock,a);
+if(i==0)
+{
+printf("email is harshitha......");
+}
+else
+{
+printf("incorrect password");
+}
+}
+void adhar()
+{
+char a[100];
+int i;
+printf("enter a password");
+scanf("%s",a);
+i=strcmp(lock,a);
+if(i==0)
+{
+printf("adhar is 23455");
+}
+else
+{
+printf("incorrect password");
+}
+}
+void pan()
+{
+char a[100];
+int i;
+printf("enter a password");
+scanf("%s",a);
+i=strcmp(lock,a);
+if(i==0)
+{
+printf("pan is nmuhgb");
+}
+else
+{
+printf("incorrect password");
+}
+}
